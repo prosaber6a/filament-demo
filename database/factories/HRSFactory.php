@@ -2,7 +2,7 @@
 
 namespace Database\Factories;
 
-use App\Models\Agent;
+
 use App\Models\HR;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
@@ -19,7 +19,7 @@ class HRSFactory extends Factory
     public function definition(): array
     {
         return [
-            'agent_id' => Agent::factory(),
+            'agent_id' => rand(1, 5),
             'name' => $this->faker->name(),
             'father' => $this->faker->name(),
             'mother' => $this->faker->name(),

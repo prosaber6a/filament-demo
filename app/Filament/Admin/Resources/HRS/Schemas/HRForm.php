@@ -24,7 +24,7 @@ class HRForm
                         'md' => 2,
                         'xl' => 2,
                     ])
-                    ->relationship('agent')
+                    // ->relationship('agent')
                     ->schema([
 
                         TextInput::make('name')
